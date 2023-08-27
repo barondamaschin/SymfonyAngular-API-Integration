@@ -1,0 +1,35 @@
+<br><br><br>
+<form (ngSubmit)="createGroup()">
+    <div>
+      <label for="name">Nume:</label>
+      <input type="text" id="nom_du_groupe" [(ngModel)]="newGroup.NomDuGroupe" name="name" required>
+    </div>
+    
+    <div>
+      <label for="origine">Origine:</label>
+      <input type="text" id="origine" [(ngModel)]="newGroup.Origine" name="origine" required>
+    </div>
+
+    <div>
+      <label for="city">Oraș:</label>
+      <input type="text" id="city" [(ngModel)]="newGroup.Ville" name="city" required>
+    </div>
+
+    <div>
+      <label for="annee_debut">An Început:</label>
+      <input type="number" id="annee_debut" [(ngModel)]="newGroup.anneeDebut" name="AnneeDebut" required>
+    </div>
+
+    <div>
+      <label for="founders">Fondatori:</label>
+      <input type="text" id="founders" [(ngModel)]="newGroup.fondateurs" name="Fondateurs" required>
+    </div>
+
+    <div>
+      <label for="presentation">Descriere:</label>
+      <textarea id="presentation" [(ngModel)]="newGroup.presentation" name="presentation" required></textarea>
+    </div>
+
+
+    <button type="submit">Creează Grup</button>
+</form>

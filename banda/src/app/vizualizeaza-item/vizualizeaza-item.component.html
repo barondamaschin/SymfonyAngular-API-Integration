@@ -1,0 +1,46 @@
+<div *ngIf="group">
+    <h2>Detalii Grup: {{ group.NomDuGroupe }}</h2>
+  
+    <div class="detail-section">
+      <label><strong>Nume:</strong></label>
+      <p>{{ group.NomDuGroupe }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Origine:</strong></label>
+      <p>{{ group.Origine }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Oraș:</strong></label>
+      <p>{{ group.Ville }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>An Început:</strong></label>
+      <p>{{ group.anneeDebut }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Fondatori:</strong></label>
+      <p>{{ group.fondateurs }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Membri:</strong></label>
+      <p>{{ group.membres ? group.membres : 'N/A' }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Stil Muzical:</strong></label>
+      <p>{{ group.CourantMusical ? group.CourantMusical : 'N/A' }}</p>
+    </div>
+  
+    <div class="detail-section">
+      <label><strong>Descriere:</strong></label>
+      <p>{{ group.presentation }}</p>
+    </div>
+  
+
+  </div>
+  

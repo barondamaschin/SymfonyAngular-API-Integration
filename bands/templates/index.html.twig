@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Datele au fost importate cu succes!</h1>
+
+<br>
+    <table border=1 frame=void rules=rows>
+        <thead>
+            <tr>
+                {% for header_cell in header %}
+                    <th>{{ header_cell }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in sheetData %}
+                <tr>
+                    {% for cell in row %}
+                        <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

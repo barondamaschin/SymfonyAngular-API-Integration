@@ -1,0 +1,50 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nume</th>
+        <th>Origine</th>
+        <th>Oraș</th>
+        <th>An Început</th>
+        <th>An Separare</th>
+        <th>Fondatori</th>
+        <th>Membri</th>
+        <th>Stil Muzical</th>
+        <th>Descriere</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Group"> 
+
+     
+        <td>{{ item.id }}</td>
+        <td>{{ item.NomDuGroupe }}</td>
+        <td>{{ item?.Origine }}</td>
+        <td>{{ item.Ville }}</td>
+        <td>{{ item.anneeDebut }}</td>
+        <td>{{ item.anneeSeparation }}</td>
+        <td>{{ item.fondateurs }}</td>
+        <td>{{ item.membres }}</td>
+        <td>{{ item.courant_musical }}</td>
+        <td>{{ item.presentation }}</td>
+      
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+  
+  
+
+
+<h2>Edit Post</h2>
+<form (ngSubmit)="saveChanges()">
+  <label for="title">ID:</label>
+  <input type="text" id="id" [(ngModel)]="Group.id" name="id" required>
+  <!-- Other input fields for editing other properties -->
+
+  <button type="submit">Save Changes</button>
+</form>
